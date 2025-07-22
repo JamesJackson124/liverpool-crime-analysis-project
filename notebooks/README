@@ -44,4 +44,3 @@ Install dependencies with:
 
 ```bash
 pip install pandas numpy matplotlib seaborn sqlalchemy
-
