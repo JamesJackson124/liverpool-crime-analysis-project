@@ -1,1 +1,47 @@
+# UK Crime Data Analysis Notebooks
+
+This repository contains a collection of Jupyter notebooks for processing, cleaning, and analyzing UK crime data over a 12-month period. The notebooks demonstrate a step-by-step data pipeline from raw data ingestion to exploratory data analysis (EDA).
+
+---
+
+## Notebooks Overview
+
+### 1. `data-concatenation.ipynb`
+
+- Purpose: Loads and concatenates monthly raw crime CSV files into one unified dataset.
+- Key tasks: File reading, merging dataframes, basic validation.
+- Output: Combined raw dataset saved for downstream processing.
+
+### 2. `sql-data-cleansing.ipynb`
+
+- Purpose: Cleans and normalizes the raw concatenated data using SQL.
+- Key tasks: Removing duplicates, handling missing values, data type conversions, and basic transformations.
+- Output: Cleaned, ready-to-analyze dataset stored in a SQL database.
+
+### 3. `EDA.ipynb`
+
+- Purpose: Performs exploratory data analysis on the cleaned crime data.
+- Key tasks: Visualizing crime trends over time, geographic crime distribution, and crime outcomes.
+- Output: Charts and summary statistics highlighting key insights.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Jupyter Notebook or JupyterLab
+- SQL database (SQLite recommended for local use)
+- Python libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - sqlalchemy
+
+Install dependencies with:
+
+```bash
+pip install pandas numpy matplotlib seaborn sqlalchemy
 
