@@ -1,35 +1,55 @@
-# 📂 Data Directory
+# Data Directory
 
-This folder was intended to contain the data used throughout the Liverpool Crime Analysis project, as well as any acquisation or concatenation processes.
+This folder contains the data used in the **Liverpool Crime Analysis** project, including both raw and cleaned versions, saved in compressed `.zip` format due to GitHub file size constraints.
 
 ---
 
 ## Dataset Overview
 
-The primary dataset used in this project is **street-level crime data for Liverpool** sourced from the official UK Police API and Open Data portal. It spans **June 2024 through May 2025**, covering a full year of recorded incidents.
+The dataset consists of **street-level crime data for Liverpool**, sourced from the official UK Police Open Data portal.  
+It spans **June 2024 to May 2025**, covering a full year of recorded crime incidents in the Merseyside Police jurisdiction.
 
 ---
 
-## Why the Data Isn’t Included
+## Included Files
 
-The combined CSV file (`liverpool_crime_data.csv`) exceeds GitHub’s 25MB file size limit and therefore is **not included** in this repository.
+### `raw_data.zip`
+- Contains the original monthly CSVs as downloaded from the UK Police data portal.
+- Used as the starting point for data cleaning and concatenation.
+
+### `clean_data.csv`
+- Fully cleaned, combined dataset used for EDA and Power BI.
+- Cleaned steps included:
+  - Normalized column names (snake_case)
+  - Dropped irrelevant fields (`context`, `reported_by`, `falls_within`)
+  - Handled missing values (`ASB_FILL` placeholder used for missing IDs as all instances are anti-social behaviour)
+  - Ensured consistent values and formats
+  - Parsed `month` field as datetime
+
+### `clean_data.zip`
+- Compressed version of `clean_data.csv` for GitHub storage.
 
 ---
 
-## How to Access the Data
+## Data Processing Notes
 
-You can obtain the same data directly from the official police data website:
+- Data contatenation is handled in the notebook:  
+  ➤ `/notebooks/data-contatenation.ipynb`
 
+- All data processing and cleaning is handled in the notebook:  
+  ➤ `/notebooks/sql-data-cleansing.ipynb`
+
+---
+
+## Source
+
+If you'd like to download the raw data yourself, use:  
 ▶️ [https://data.police.uk/data/](https://data.police.uk/data/)
 
-When downloading:
-
 - Select **"Merseyside Police"**
-- Choose date range: **June 2024 – May 2025**
-- Download the **street-level crime data (CSV format)**
-
-Once downloaded, save the files in this `/data` folder and run the provided preprocessing script (`crime_data_concatenation.py`) to combine them into a single dataset.
+- Choose the date range: **June 2024 – May 2025**
 
 ---
+
 
 
