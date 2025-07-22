@@ -55,4 +55,14 @@ Install dependencies with:
 
 ```bash
 pip install pandas numpy matplotlib seaborn sqlalchemy
+```
 
+---
+
+## Summary
+
+These notebooks collectively provide a reproducible workflow to transform raw UK crime data into actionable insights through cleaning and exploratory analysis. They can be adapted for different regions, periods, or further extended for predictive modeling or advanced visualizations.
+
+---
+
+If you want, I can also help with the READMEs for the other folders — just let me know!
