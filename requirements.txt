@@ -1,1 +1,11 @@
-
+pandas
+numpy
+matplotlib
+seaborn
+sqlalchemy
+requests
+geopandas
+shapely
+plotly
+ipywidgets
+notebook
