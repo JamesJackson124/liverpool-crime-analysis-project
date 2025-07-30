@@ -28,6 +28,7 @@ Plots were created in the **EDA** and **EDA2** notebooks and saved here as `.png
 ---
 
 ## Notes
+- **These are the key visualisations**, but there may be additional exploratory plots saved in this folder that supported the analysis.  
 - All plots use consistent **pastel colour palettes** and clear labelling for readability.  
 - Filenames correspond to their chart names (e.g., `crime_type_distribution.png`).  
 - Interactive plots and dashboards are not saved here—they remain in the notebooks.
