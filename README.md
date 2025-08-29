@@ -4,7 +4,7 @@
 The interactive dashboard has been deployed on my website.  
 Please click the link below to explore:
 
-👉 [Liverpool Crime Dashboard](https://james-jackson-ds.fly.dev/crime))
+https://james-jackson-ds.fly.dev/crime
 
 ## 2. Project Overview
 This project analyses Merseyside Police crime data (June 2024 – May 2025) to uncover trends, hotspots, and insights related to public safety. The project includes multiple phases: data cleaning, exploratory data analysis (EDA), interactive dashboarding, and reporting.
